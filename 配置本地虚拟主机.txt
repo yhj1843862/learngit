@@ -1,0 +1,20 @@
+ sudo vi /etc/apache2/http.conf
+ 搜索 vhosts
+ 将 "Include /private/etc/apache2/extra/httpd-vhosts.conf"前的#  去掉
+ 保存退出
+ 备份
+ sudo vi /private/etc/apache2/extra/httpd-vhosts.conf
+ 添加下面内容:
+	<VirtualHost *:8888>  // 设置端口号
+    		DocumentRoot "/Users/qingyun/php/git" //设置根目录
+    		ServerName kcjm.com  //设置主域名
+    		ServerAlias www.kcjm.com  //设置别名域名
+	</VirtualHost>
+ 保存退出
+  sudo vi etc/hosts
+	 添加
+		127.0.0.1 kcjm.com
+127.0.0.1 www.kcjm.com
+保存退出
+ 重启 Apache
+
