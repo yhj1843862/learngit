@@ -6,4 +6,4 @@ Git is a distributed version control system.
 Git是一个分布式的版本控制系统
 Git has a mutable index calles stage.
 Git有可变的指数所说的阶段。
-Git tracks changes.
+Git tracks changes of files. 
